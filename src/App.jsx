@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/destinations" element={<Destinations  destinations={data.destinations}/>} />
-          <Route path="/crew" element={<Crew  crews={data.crew}/>} />
+          <Route path="/crew" element={<Crew  crew={data.crew}/>} />
           <Route path="/technology" element={<Technology technology={data.technology} />} />
         </Routes>
       </BrowserRouter>

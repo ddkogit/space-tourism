@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
-function Technology() {
-  return (
-    <div>Technology</div>
-  )
+function Technology({ technology }) {
+  console.log(technology);
+  return <div>Technology</div>;
 }
 
-export default Technology
+export default Technology;

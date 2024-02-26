@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Crew() {
+function Crew({crew}) {
+  console.log(crew)
   return (
     <div>Crew</div>
   )
