@@ -20,6 +20,7 @@ function Technology({ technology }) {
     <div>
       {currentTech.name}
     </div>
+    <img src={currentTech.images.portrait} alt={currentTech.name} />
   </div>;
 }
 

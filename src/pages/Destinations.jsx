@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Destinations.css";
 function Destinations({ destinations }) {
-  console.log(destinations);
-
   const [currentDest, setCurrentDest]= useState(destinations[0]);
+  console.log(currentDest.images.png);
 
   const handleClick=(dest)=>{
       setCurrentDest(dest);
   }
+  const source = "";
+
+
 
   return (
     <>
@@ -31,6 +33,8 @@ function Destinations({ destinations }) {
       <div className="content">
         {currentDest.name}
         {currentDest.description}
+        
+        <img src={currentDest.images.png} alt={currentDest.name} />
       </div>
     </>
   );

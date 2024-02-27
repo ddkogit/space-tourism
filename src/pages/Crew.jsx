@@ -15,6 +15,7 @@ function Crew({ crew }) {
         </NavLink>
       ))}
       <div>{currentCrew.name}</div>
+      <img src={currentCrew.images.png} alt={currentCrew.name} />
     </div>
   );
 }
