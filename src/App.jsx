@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Crew from "./pages/Crew";
 import Destinations from "./pages/Destinations";
 import Technology from "./pages/Technology";
+import "./App.css"
 
 import { useData } from "./context/data";
 import { useState } from "react";
@@ -27,7 +28,7 @@ function App() {
 
       <BrowserRouter>
         <div className="navPlace">
-          <Navbar data={data} />
+          <Navbar data={data} className="navbar"/>
         </div>
         <Routes>
           <Route

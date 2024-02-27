@@ -9,10 +9,12 @@ function Home({background,setBg}) {
 
   return (
     <div >
+      <div className="container">
+
       <div className="left">
 
-      <div>SO, YOU WANT TO TRAVEL TO</div>
-      <div>SPACE</div>
+      <div className="h5">SO, YOU WANT TO TRAVEL TO</div>
+      <div className="h1">SPACE</div>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
         deleniti, asperiores odio tempore ducimus amet necessitatibus dolor
@@ -24,7 +26,8 @@ function Home({background,setBg}) {
       </div>
 
       <div className="right">
-        <button className="actionbtn">EXPLORE</button>
+        <button className=" h4 actionbtn">EXPLORE</button>
+      </div>
       </div>
     </div>
   );

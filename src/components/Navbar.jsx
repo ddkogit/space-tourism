@@ -7,7 +7,7 @@ function Navbar({}) {
     <div className="navItem">
     
     <img src="./assets/shared/logo.svg" alt="Logo" className="logo" />
-   
+
 
     <div className="navbar navtext">
       <NavLink  to={"/"}>00 Home</NavLink>

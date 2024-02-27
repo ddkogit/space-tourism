@@ -1,7 +1,26 @@
 
 
 .actionbtn{
-    padding: 100px;
-    border-radius: 100%;
+    display: inline-block;
+    padding:  100px 50px;
+    border-radius: 50%;
     border: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    margin: 120px auto;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+
+.left{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
