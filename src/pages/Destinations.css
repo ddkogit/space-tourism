@@ -1,0 +1,14 @@
+.dest-nav{
+    display: flex;
+    gap:10px;
+
+}
+
+.activeLink{
+    background-color: red;
+   
+}
+
+.alink{
+    text-decoration: none;
+}
