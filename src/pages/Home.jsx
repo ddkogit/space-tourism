@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css"
 
-function Home() {
+function Home({background,setBg}) {
+
+  useEffect(()=>{
+    setBg (background)
+  },[])
+
   return (
-    <div>
+    <div >
       <div className="left">
 
       <div>SO, YOU WANT TO TRAVEL TO</div>

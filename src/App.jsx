@@ -10,49 +10,61 @@ import { useData } from "./context/data";
 import { useState } from "react";
 function App() {
   const data = useData();
-  const [url,setUrl] = useState("../assets/home/background-home-desktop.jpg")
 
-  const selectedBg =(bg)=>{
-    setUrl(bg);
+  const [url,setUrl] = useState("");
+  const setBg=(bg)=>{
+
+    setUrl(bg)
+
   }
+
   return (
     <>
     <div style={{
-      background:`url(${url}))`,
+      background:`url(${url})`,
       height:"100vh"
     }}>
-
-   
 
       <BrowserRouter>
         <div className="navPlace">
           <Navbar data={data} />
         </div>
         <Routes>
-          <Route path="/" element={<Home selectedBg={selectedBg} />} />
+          <Route
+            path="/"
+            element={<Home 
+              background={data.backgrounds.home}
+            setBg={setBg} />}
+            />
           <Route
             path="/destinations"
             element={
               <Destinations
               destinations={data.destinations}
-              selectedBg={selectedBg}
+              background={data.backgrounds.destination}
+              setBg={setBg}
               />
             }
             />
           <Route
             path="/crew"
-            element={<Crew crew={data.crew} />}
-            selectedBg={selectedBg}
+            element={<Crew crew={data.crew} 
+            background={data.backgrounds.crew}
+            setBg={setBg} />}
             />
           <Route
             path="/technology"
-            selectedBg={selectedBg}
-            element={<Technology technology={data.technology} />}
+            element={
+              <Technology
+              technology={data.technology}
+              background={data.backgrounds.technology}
+              setBg={setBg}
+              />
+            }
             />
         </Routes>
       </BrowserRouter>
             </div>
-           
     </>
   );
 }

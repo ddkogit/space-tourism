@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-function Crew({ crew }) {
+function Crew({ crew,setBg,background }) {
   const [currentCrew, setCurrentCrew] = useState(crew[0]);
   const handleClick = (crew) => {
     setCurrentCrew(crew);
   };
 
+  useEffect(()=>{
+    setBg (background)
+  },[]);
   return (
     <div>
       {crew.map((item) => (

@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Destinations.css";
-function Destinations({ destinations }) {
+
+function Destinations({ destinations,background,setBg }) {
   const [currentDest, setCurrentDest] = useState(destinations[0]);
   console.log(currentDest.images.png);
 
   const handleClick = (dest) => {
     setCurrentDest(dest);
   };
+
+  useEffect(()=>{
+    setBg (background)
+  },[]);
+
 
   return (
     <>
