@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Destinations.css";
 function Destinations({ destinations }) {
-  const [currentDest, setCurrentDest]= useState(destinations[0]);
+  const [currentDest, setCurrentDest] = useState(destinations[0]);
   console.log(currentDest.images.png);
 
-  const handleClick=(dest)=>{
-      setCurrentDest(dest);
-  }
-  const source = "";
-
-
+  const handleClick = (dest) => {
+    setCurrentDest(dest);
+  };
 
   return (
     <>
@@ -19,8 +16,8 @@ function Destinations({ destinations }) {
       <div>
         <nav className="dest-nav">
           {destinations.map((dest) => (
-            <NavLink 
-            onClick={()=>handleClick(dest)}
+            <NavLink
+              onClick={() => handleClick(dest)}
               to={`/destinations`}
               activeClassName="activeLink"
               className="alink"
@@ -33,7 +30,7 @@ function Destinations({ destinations }) {
       <div className="content">
         {currentDest.name}
         {currentDest.description}
-        
+
         <img src={currentDest.images.png} alt={currentDest.name} />
       </div>
     </>

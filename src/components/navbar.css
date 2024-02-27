@@ -1,4 +1,29 @@
+.navItem{
+    display: flex;
+    align-items: center;
+    /* margin-top: 20px; */
+    
+}
+
 .navbar{
     display: flex;
-    gap:10px;
+    gap:40px;
+    background-color: grey;
+    padding: 20px 50px;
+    width: 50%;
+    position: sticky;
+    margin-left: auto;
+    right: 0;
+    
+    
+}   
+.navbar >*{
+    
+    color: var(--accent-color);
+    text-decoration: none;
 }
+
+.logo{
+    margin-left: 20px;
+}
+

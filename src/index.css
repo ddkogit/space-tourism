@@ -8,8 +8,11 @@
 
 body{
     font-family: "Barlow Condensed", sans-serif;
-
-}
+    color: var(--accent-color);
+   
+        margin: 0px;
+        padding: 0px;
+    }
 
 .h1{
     font-size: 150px;

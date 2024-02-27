@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.css"
 
 function Home() {
   return (
@@ -18,7 +19,7 @@ function Home() {
       </div>
 
       <div className="right">
-        <button>EXPLORE</button>
+        <button className="actionbtn">EXPLORE</button>
       </div>
     </div>
   );
